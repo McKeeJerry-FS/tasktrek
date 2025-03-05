@@ -3,11 +3,10 @@ import React from 'react'
 
 import './TaskColumn.css'
 
-const TaskColumn = (props) => {
-  console.log("Props", props);
+const TaskColumn = ({taskHeading, taskIcon}) => {
   return (
     <section className="task_column">
-      <h2 className='task_column_heading'><img src={props.taskIcon} className='task_column_icon' alt="" />{props.taskHeading}</h2>
+      <h2 className='task_column_heading'><img src={taskIcon} className='task_column_icon' alt="" />{taskHeading}</h2>
     </section>
   );
 }
