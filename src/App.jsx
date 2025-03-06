@@ -1,4 +1,5 @@
 import React from 'react'
+import AppHeading from './components/AppHeading'
 import TaskForm from './components/TaskForm'
 import TaskColumn from './components/TaskColumn'
 import todoIcon from './assets/direct-hit.png'
@@ -10,6 +11,7 @@ import './App.css'
 const App = () => {
   return (
     <div className='app'>
+      <AppHeading />
       <TaskForm />
       <main className="app_main">
         <TaskColumn taskIcon={todoIcon} taskHeading='To Do' />
